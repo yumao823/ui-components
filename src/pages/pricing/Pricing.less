@@ -1,0 +1,1103 @@
+@import "../../../ant-var.less";
+// pricing page
+.pricing-main-box {
+  background-image: url("../../assets/images/pricing-bg.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  padding: 149px @padding-md-ql @padding-md-ql 0;
+}
+.price-box {
+  background-color: @light-color1;
+  text-align: center;
+  border: 1px solid @opacity2;
+  box-sizing: border-box;
+  box-shadow: @box-shadow-light;
+  border-radius: @border-radius-base-ql;
+  padding: 49px 32px 32px 32px;
+  margin: @margin-md-ql 0;
+  &.first .ant-list {
+    min-height: 200px;
+  }
+  &.active {
+    margin: 0;
+    background: linear-gradient(
+        355.72deg,
+        rgba(0, 0, 0, 0.4) -75.11%,
+        rgba(0, 0, 0, 0.19375) -15.45%,
+        rgba(0, 0, 0, 0) 91.71%
+      ),
+      #3f6587;
+    h2.ant-typography {
+      color: @light-color1;
+    }
+    .ant-btn {
+      color: @accent1;
+      background-color: @light-color1;
+    }
+    h4.ant-typography {
+      color: @light-color1;
+    }
+    strong {
+      color: @light-color1;
+    }
+    .ant-list-item-meta-description {
+      color: @light-color1;
+    }
+    .anticon {
+      background-color: @light-color1;
+    }
+    .price-inner-box {
+      border: 1px solid @accent4;
+    }
+    .ant-anchor a {
+      color: @light-color1;
+    }
+    .inner-light-box {
+      background-color: @light-color1;
+    }
+    .inner-light-box .ant-typography {
+      color: @accent1;
+    }
+    .inner-light-box strong {
+      color: @accent1;
+    }
+  }
+  strong {
+    font-weight: bolder;
+    color: @accent1;
+  }
+  h2.ant-typography {
+    font-size: @heading-2-size-ql;
+    font-weight: bold;
+    color: @accent1;
+    line-height: 43px;
+    margin-top: 1rem;
+    margin-bottom: @margin-xs-ql;
+  }
+  h3.ant-typography {
+    font-weight: bold;
+    font-size: @font-size-lg-ql;
+    color: @accent12;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    line-height: 20px;
+  }
+  .ant-btn {
+    background-color: @accent1;
+    color: @light-color1;
+    border: none;
+    border-radius: @border-radius-base-ql;
+    padding: 8px 32px;
+    box-shadow: none;
+    font-size: @font-size-lg-ql;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+  h4.ant-typography {
+    font-size: @font-size-base-ql;
+    color: @accent1;
+    margin-bottom: 0;
+  }
+  h5.ant-typography {
+    font-size: @font-size-base-ql;
+    color: @accent12;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .ant-list {
+    min-height: 150px;
+    padding: 0 20px;
+  }
+  .ant-list-item {
+    text-align: left;
+  }
+  .ant-list-item-meta {
+    align-items: baseline;
+  }
+  .ant-list-item-meta-content {
+    padding: 0;
+    background-color: transparent;
+  }
+  .ant-list-item-meta-description {
+    font-size: @font-size-xs-ql;
+    text-transform: capitalize;
+  }
+  .ant-list-item-meta-avatar {
+    line-height: 0;
+    background-color: transparent;
+    padding: 0;
+  }
+  .anticon {
+    background-color: @light-color3;
+    padding: 3px;
+    border-radius: 20px;
+    font-size: @font-size-xxs-ql;
+  }
+  .price-inner-box {
+    border-radius: @border-radius-base-ql;
+    border: 1px solid @light-color4;
+    box-sizing: border-box;
+    padding: 8px 0;
+    margin: @margin-md-ql 3.125rem 2.875rem;
+  }
+  .ant-anchor-ink::before {
+    display: none;
+  }
+  .ant-anchor a {
+    font-size: @font-size-sm-ql;
+    font-weight: bold;
+    color: @accent1;
+    text-decoration: underline;
+  }
+  .inner-light-box {
+    background-color: @light-color3;
+    padding: 8px 0;
+    border-radius: @border-radius-base-ql;
+    margin-bottom: 1rem;
+  }
+}
+.pricing-panel-bg {
+  margin-top: @margin-xl-ql;
+  padding: 100px 0 120px 0;
+  background-color: @light-color3;
+  clip-path: polygon(0 3%, 100% 0, 100% 95%, 0 100%);
+}
+.panel-main-head {
+  text-align: left;
+  .ant-typography {
+    font-size: 1rem;
+    color: @secondary-color1;
+  }
+  h1.ant-typography {
+    font-size: @heading-2-size-ql;
+    color: @accent1;
+    margin-top: 2.1875rem;
+    i {
+      color: @primary-color;
+      font-weight: normal;
+      font-style: normal;
+    }
+  }
+}
+.ant-tabs-content {
+  padding: 45px;
+  background-color: @light-color1;
+  border-radius: 0 0 4px 4px;
+}
+.ant-tabs-top > .ant-tabs-nav {
+  margin-bottom: 0;
+}
+.ant-tabs-tab-active {
+  background-color: @light-color1;
+}
+.ant-tabs-card.ant-tabs-top > .ant-tabs-nav .ant-tabs-tab + .ant-tabs-tab,
+.ant-tabs-card.ant-tabs-top > .ant-tabs-nav .ant-tabs-tab {
+  margin-left: 0.25rem;
+  border: none;
+  background: linear-gradient(
+      360deg,
+      rgba(0, 0, 0, 0.058125) -51.25%,
+      rgba(0, 0, 0, 0.075) -51.24%,
+      rgba(0, 0, 0, 0.0075) 18.75%
+    ),
+    @light-color1;
+  border-radius: 4px 4px 0 0;
+  width: 100%;
+  justify-content: center;
+  padding: 16px 40px;
+  display: block;
+}
+.ant-tabs {
+  filter: drop-shadow(15px 15px 30px rgba(0, 0, 0, 0.1));
+  > .ant-tabs-nav .ant-tabs-nav-list {
+    justify-content: initial;
+  }
+  > .ant-tabs-nav .ant-tabs-nav-wrap {
+    display: block;
+  }
+  > .ant-tabs-nav .ant-tabs-nav-operations {
+    display: none;
+  }
+  > .ant-tabs-nav {
+    display: block;
+    text-align: center;
+  }
+}
+.ant-tabs-tab img {
+  margin-right: @margin-xs-ql;
+}
+.ant-tabs-card.ant-tabs-top {
+  > .ant-tabs-nav .ant-tabs-tab .ant-typography {
+    font-weight: bold;
+    font-size: @font-size-lg-ql;
+    color: @accent1;
+  }
+  > .ant-tabs-nav .ant-tabs-tab {
+    font-size: @font-size-lg-ql;
+    margin-left: 0;
+  }
+  .ant-tabs-tab-active {
+    background: @light-color1!important;
+    color: @accent1;
+  }
+}
+.price-panel {
+  margin-top: 7.5rem;
+  h3.ant-typography {
+    color: @accent1;
+    font-weight: bold;
+    font-size: @font-size-lg-ql;
+  }
+  h4.ant-typography {
+    color: @accent1;
+    font-size: @font-size-base-ql;
+    margin-bottom: @margin-md-ql;
+  }
+  h5.ant-typography {
+    width: max-content;
+    color: @accent1;
+    font-size: @font-size-xs-ql;
+    padding: 8px 16px;
+    border-radius: @border-radius-base-ql;
+    line-height: 12px;
+    border: 1px solid @light-color4;
+  }
+  h5.ant-typography .ant-typography {
+    line-height: 12px;
+  }
+  h5.ant-typography strong {
+    color: @accent1;
+    font-size: @font-size-xs-ql;
+  }
+  .ant-list-item-meta-avatar {
+    background-color: transparent;
+    padding: 0;
+  }
+  .ant-list-items {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .ant-list-item-meta-content {
+    padding: 0;
+    width: max-content;
+  }
+  .ant-list-item {
+    padding: 0;
+    margin-right: 0.75rem;
+  }
+  .ant-list-item-meta {
+    align-items: center;
+  }
+  .ant-list-item-meta-title {
+    font-size: @font-size-xs-ql;
+    margin-bottom: 0;
+  }
+  .anticon {
+    font-size: @font-size-xxs-ql;
+    line-height: 10px;
+  }
+  .ant-btn {
+    border-radius: @border-radius-base-ql;
+    background-color: @accent1;
+    color: @light-color1;
+    box-shadow: none;
+    font-size: @font-size-sm-ql;
+    line-height: 14px;
+    margin-top: 3.75rem;
+  }
+}
+.faq-bg {
+  margin-top: -5rem;
+  padding: 150px 0 180px 0;
+  background-color: @light-color1;
+}
+.ant-collapse {
+  background-color: transparent;
+  border: none;
+  margin-top: 2.8125rem;
+  > .ant-collapse-item {
+    border-bottom: 1px solid @accent4;
+    .ant-collapse-header {
+      background-color: transparent;
+      border: none;
+      font-size: @font-size-lg-ql;
+      font-weight: bold;
+      padding: 32px 0;
+      .ant-collapse-arrow {
+        right: 0;
+        top: 50%;
+        position: absolute;
+      }
+    }
+  }
+}
+.ant-collapse-content {
+  background-color: transparent;
+  font-size: @font-size-lg-ql;
+}
+.ant-tabs-nav-wrap {
+  flex: none;
+}
+.comparison-bg {
+  margin-top: -0.7rem;
+  background: @light-color2;
+  padding: 150px 0 0 0;
+}
+.price-table {
+  margin-top: @margin-xl-ql;
+  .ant-table {
+    background: transparent;
+    border: none;
+  }
+  .ant-table-wrapper table {
+    background: transparent;
+    border: none !important;
+  }
+  .ant-table-thead > tr > th {
+    border: none;
+    background-color: @light-color1;
+    vertical-align: top;
+    border-radius: 8px 8px 0 0;
+    &.subheading-col {
+      background-color: transparent;
+    }
+    &.primary-col {
+      background-color: @accent1;
+    }
+  }
+  .ant-table-tbody {
+    border-radius: @border-radius-base-ql;
+    background-color: @accent13;
+    box-shadow: 15px 15px 30px @opacity2;
+    > tr > td {
+      border: none;
+    }
+  }
+  .compare-head {
+    text-align: center;
+    .box {
+      display: flex;
+      vertical-align: middle;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin: @margin-xs-ql 0;
+    }
+    h3.ant-typography {
+      color: @accent1;
+      font-size: @font-size-sm-ql;
+      margin-bottom: 0;
+      line-height: 15px;
+      font-weight: normal;
+    }
+    h4.ant-typography {
+      font-size: 0.5625rem;
+      color: @accent3;
+      font-weight: normal;
+      margin: 0.125rem 0;
+    }
+    .ant-image-img {
+      height: 21px;
+    }
+    &.premium-head {
+      h3.ant-typography {
+        color: @light-color1;
+      }
+      .box {
+        color: @light-color1;
+      }
+    }
+  }
+  .primary-col {
+    text-align: center;
+    background-color: @accent1;
+    h3.ant-typography {
+      color: @light-color1;
+      font-size: @font-size-base-ql;
+      font-weight: bold;
+    }
+    &.ant-table-cell {
+      color: @light-color1;
+    }
+    .anticon-check {
+      background-color: @light-color3;
+    }
+  }
+  tr:last-child td.ant-table-cell {
+    padding-bottom: 30px;
+  }
+  tr td.ant-table-cell {
+    font-size: @font-size-sm-ql;
+    color: @accent1;
+    border-right: 1px solid @accent14;
+    &.subheading-col,
+    &.primary-col {
+      border-right: none;
+    }
+  }
+  .subheading-col {
+    background-color: transparent;
+    width: 350px;
+    max-width: 100%;
+  }
+  .compare-head {
+    &.premium-head .box {
+      color: @light-color1;
+    }
+    .box {
+      display: flex;
+      vertical-align: middle;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin: @margin-xs-ql 0;
+    }
+    h3.ant-typography {
+      color: @accent1;
+      font-size: @font-size-sm-ql;
+      margin-bottom: 0;
+      line-height: 15px;
+      font-weight: normal;
+    }
+    h4.ant-typography {
+      font-size: 0.5625rem;
+      color: @accent3;
+      font-weight: normal;
+      margin: 0.125rem 0;
+    }
+    .ant-image-img {
+      height: 21px;
+    }
+  }
+  .anticon-check {
+    border-radius: 50%;
+    color: @accent1;
+    font-size: 0.8125rem;
+    padding: 5px;
+    font-weight: bold;
+    background-color: @light-color1;
+  }
+  .ant-btn {
+    background-color: @light-color1;
+    border: 1px solid rgba(63, 101, 135, 0.5);
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: @font-size-xs-ql;
+    line-height: 12px;
+    padding: 6px 12px;
+    box-shadow: none;
+    color: @accent1;
+  }
+  .premium-head .ant-btn {
+    color: @light-color1;
+    background-color: @accent1;
+    border-color: @light-color1;
+  }
+  .compare-subhead-data {
+    font-weight: bold;
+    font-size: @font-size-base-ql;
+    line-height: 15px;
+  }
+  .compare-subhead {
+    margin: @margin-md-ql 0;
+    color: @accent1;
+    font-size: @heading-3-size-ql;
+    line-height: 35px;
+    font-weight: bold;
+  }
+  .anticon-question-circle {
+    color: @light-color5;
+    margin-left: 1rem;
+  }
+  .ant-table-thead
+    > tr
+    > th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before {
+    display: none;
+  }
+}
+.ant-tabs-top > .ant-tabs-nav::before {
+  border: none;
+}
+.ant-tabs-nav-wrap {
+  display: block;
+}
+/* tablet (md) */
+@media (min-width: 768px) and (max-width: 991.5px) {
+}
+/* mobile (sm) */
+@media (min-width: 574px) and (max-width: 767.5px) {
+  .price-panel .ant-list-items {
+    display: list-item;
+  }
+  .ant-tabs-card.ant-tabs-top > .ant-tabs-nav .ant-tabs-tab + .ant-tabs-tab,
+  .ant-tabs-card.ant-tabs-top > .ant-tabs-nav .ant-tabs-tab {
+    padding: 8px 0;
+    line-height: 10px;
+    background: linear-gradient(
+        360deg,
+        rgba(0, 0, 0, 0.03875) -51.25%,
+        @opacity2 -51.24%,
+        rgba(0, 0, 0, 0.005) 18.75%
+      ),
+      @light-color3;
+  }
+  .ant-tabs-nav-wrap {
+    display: block !important;
+  }
+  .ant-tabs-card.ant-tabs-top > .ant-tabs-nav .ant-tabs-tab .ant-typography {
+    font-size: @font-size-xs-ql;
+  }
+  .ant-tabs-tab img {
+    display: block;
+    margin: 0 auto;
+  }
+  .comparison-bg {
+    padding: 100px 0;
+    margin-top: 0;
+  }
+  .faq-bg {
+    margin-top: 0;
+    padding: 100px 0;
+    background-color: @accent5;
+  }
+  .panel-main-head {
+    text-align: center;
+    .ant-typography {
+      font-size: @font-size-sm-ql;
+    }
+    h1.ant-typography {
+      font-size: @heading-3-size-ql;
+      margin: @margin-sm-ql auto;
+      max-width: 100%;
+      margin-top: @margin-md-ql;
+      text-align: center;
+      width: 220px;
+      i {
+        color: @accent1;
+        font-weight: bold;
+      }
+    }
+    .ant-image-img {
+      width: 80%;
+    }
+  }
+  .ant-collapse > .ant-collapse-item > .ant-collapse-header {
+    font-size: @font-size-sm-ql;
+  }
+  .ant-collapse
+    > .ant-collapse-item
+    > .ant-collapse-header
+    .ant-collapse-arrow {
+    font-size: @font-size-xs-ql;
+  }
+  .ant-tabs-content {
+    padding: 16px;
+  }
+  .price-panel {
+    margin-top: 3.75rem;
+    .ant-typography {
+      font-size: @font-size-sm-ql;
+      line-height: 18px;
+    }
+    h3.ant-typography {
+      font-size: @font-size-sm-ql;
+      margin: 0 0 @margin-xs-ql;
+    }
+    h4.ant-typography {
+      font-size: @font-size-sm-ql;
+      margin: 1rem 0 @margin-xs-ql 0;
+    }
+    h5.ant-typography {
+      width: 100%;
+      text-align: center;
+      font-size: @font-size-sm-ql;
+      line-height: 18px;
+      padding: 8px 0;
+    }
+    .ant-btn {
+      width: 100%;
+      margin-top: 2rem;
+      font-size: @font-size-lg-ql;
+      line-height: 22px;
+      padding: 8px 0;
+    }
+  }
+  .ant-collapse-content-box {
+    font-size: @font-size-sm-ql;
+  }
+  .pricing-main-box {
+    padding-top: 40px;
+    .slick-slider {
+      .slick-track {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .slick-slide {
+          .price-box {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            min-height: 450px;
+          }
+        }
+      }
+    }
+  }
+  .price-box {
+    height: 100%;
+    margin: 0 @margin-lg-ql 2.1875rem;
+    background: linear-gradient(
+        342.41deg,
+        rgba(63, 101, 135, 0.2) -36.53%,
+        rgba(63, 101, 135, 0) 61.24%
+      ),
+      @light-color1;
+    border: 1px solid @opacity2;
+    h2.ant-typography {
+      text-transform: uppercase;
+    }
+    .ant-list {
+      min-height: auto;
+    }
+    .ant-btn {
+      width: 100%;
+    }
+    .main-icon {
+      width: 60px;
+      margin: 0 auto;
+    }
+    .main-img {
+      width: 128px;
+      margin: 0 auto;
+    }
+    .price-inner-box {
+      margin: 1.5625rem 0;
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+  .price-box.active {
+    margin: 0 @margin-lg-ql 2.1875rem;
+  }
+  .price-table-mobile {
+    margin-top: @margin-lg-ql;
+    .compare-head .ant-image-img {
+      width: 30px;
+    }
+    table,
+    .ant-table {
+      border: none !important;
+      background-color: transparent;
+    }
+    tbody tr td {
+      background-color: @light-color1;
+    }
+    .compare-head h3.ant-typography {
+      color: @accent1;
+      margin: @margin-xs-ql 0;
+      font-size: @font-size-sm-ql;
+    }
+    .compare-head {
+      text-align: center;
+    }
+    .compare-head .ant-typography {
+      font-size: @font-size-xs-ql;
+      line-height: 12px;
+      color: @accent1;
+    }
+    .ant-table-thead {
+      & > tr .compare-head {
+        margin-bottom: @margin-xs-ql;
+        text-align: left;
+      }
+      & > tr > th {
+        background-color: transparent;
+        border: none;
+      }
+    }
+    .ant-table-tbody {
+      & > tr .heading-col {
+        height: 100px;
+        padding: 13px 4px;
+      }
+      & > tr td {
+        text-align: center;
+      }
+      & > tr:first-child td:nth-child(2) {
+        border-top-left-radius: 5px;
+      }
+      & > tr:first-child td:last-child {
+        border-top-right-radius: 5px;
+      }
+      & > tr:last-child td:nth-child(2) {
+        border-bottom-left-radius: 5px;
+      }
+      & > tr:last-child td:last-child {
+        border-bottom-right-radius: 5px;
+      }
+      & > tr:first-child .heading-col {
+        border-radius: 5px 5px 0 0;
+      }
+      & > tr:last-child .heading-col {
+        border-radius: 0 0 5px 5px;
+        border-spacing: 10px;
+      }
+    }
+    .anticon-check {
+      font-size: @font-size-sm-ql;
+      border-radius: 50%;
+      background-color: @light-color3;
+      padding: 5px;
+    }
+    .ant-carousel {
+      .slick-dots-bottom {
+        bottom: -18px;
+      }
+      .slick-next {
+        display: block !important;
+        background-color: @accent1;
+        border-radius: 4px 1px 1px 4px;
+        color: @light-color1;
+        right: 0;
+        padding: 6px 3px;
+        height: max-content;
+        width: max-content;
+      }
+      .slick-prev {
+        left: 56px;
+        border-radius: 1px 4px 4px 1px;
+        text-align: center;
+        background-color: @accent1;
+        padding: 6px 3px;
+        color: @light-color1;
+        display: block !important;
+        height: max-content;
+        width: max-content;
+      }
+      .slick-disabled {
+        display: none !important;
+      }
+    }
+    .ant-table-row {
+      &:nth-child(3) td {
+        background-color: @light-color3;
+      }
+      &:nth-child(3) .anticon-check {
+        background-color: @light-color1;
+      }
+    }
+    .small-icon .ant-image-img {
+      width: 23px;
+    }
+    .small-icon .ant-typography {
+      display: none;
+    }
+    .heading-group h2.ant-typography {
+      text-align: left;
+      font-size: @font-size-sm-ql;
+      color: @secondary-color3;
+      border-bottom: 1px solid @light-color5;
+      margin-bottom: 0;
+      padding-bottom: 5px;
+    }
+  }
+}
+
+/* (xs) */
+@media (max-width: 575px) {
+  .ant-tabs-card.ant-tabs-top > .ant-tabs-nav .ant-tabs-tab + .ant-tabs-tab,
+  .ant-tabs-card.ant-tabs-top > .ant-tabs-nav .ant-tabs-tab {
+    padding: 8px 0;
+    line-height: 10px;
+    background: linear-gradient(
+        360deg,
+        rgba(0, 0, 0, 0.03875) -51.25%,
+        @opacity2 -51.24%,
+        rgba(0, 0, 0, 0.005) 18.75%
+      ),
+      @light-color3;
+  }
+  .ant-tabs-nav-wrap {
+    display: block !important;
+  }
+  .ant-tabs-card.ant-tabs-top > .ant-tabs-nav .ant-tabs-tab .ant-typography {
+    font-size: @font-size-xs-ql;
+  }
+  .ant-tabs-tab img {
+    display: block;
+    margin: 0 auto;
+  }
+  .comparison-bg {
+    padding: 80px 0;
+  }
+  .faq-bg {
+    margin-top: 0;
+    padding: 100px 0;
+    background-color: @accent5;
+  }
+
+  .panel-main-head {
+    text-align: center;
+    .ant-typography {
+      font-size: @font-size-sm-ql;
+    }
+    h1.ant-typography {
+      font-size: @heading-3-size-ql;
+      margin: @margin-sm-ql auto;
+      max-width: 100%;
+      margin-top: @margin-md-ql;
+      text-align: center;
+      width: 220px;
+      i {
+        color: @accent1;
+        font-weight: bold;
+      }
+    }
+    .ant-image-img {
+      width: 80%;
+    }
+  }
+  .ant-collapse {
+    & > .ant-collapse-item > .ant-collapse-header {
+      font-size: @font-size-sm-ql;
+    }
+    & > .ant-collapse-item > .ant-collapse-header .ant-collapse-arrow {
+      font-size: @font-size-xs-ql;
+    }
+  }
+  .ant-tabs-content {
+    padding: 16px;
+  }
+  .price-panel {
+    margin-top: 3.75rem;
+    .ant-list-items {
+      display: list-item;
+    }
+    .ant-typography {
+      font-size: @font-size-sm-ql;
+      line-height: 18px;
+    }
+    h3.ant-typography {
+      font-size: @font-size-sm-ql;
+      margin: 0;
+      margin-bottom: @margin-xs-ql;
+    }
+    h4.ant-typography {
+      font-size: @font-size-sm-ql;
+      margin: 1rem 0 @margin-xs-ql 0;
+    }
+    h5.ant-typography {
+      width: 100%;
+      text-align: center;
+      font-size: @font-size-sm-ql;
+      line-height: 18px;
+      padding: 8px 0;
+    }
+    .ant-btn {
+      width: 100%;
+      margin-top: 2rem;
+      font-size: @font-size-lg-ql;
+      line-height: 22px;
+      padding: 8px 0;
+    }
+  }
+  .ant-collapse-content-box {
+    font-size: @font-size-sm-ql;
+  }
+  .pricing-main-box {
+    padding-top: 40px;
+    .slick-slider {
+      .slick-track {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .slick-slide {
+          .price-box {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            min-height: 450px;
+          }
+        }
+      }
+    }
+  }
+  .price-box {
+    margin: 0 @margin-lg-ql 2.1875rem @margin-lg-ql;
+    min-height: 100%;
+    background: linear-gradient(
+        342.41deg,
+        rgba(63, 101, 135, 0.2) -36.53%,
+        rgba(63, 101, 135, 0) 61.24%
+      ),
+      @light-color1;
+    border: 1px solid @opacity2;
+    .anticon {
+      padding: 4px;
+    }
+    h2.ant-typography {
+      text-transform: uppercase;
+    }
+    .ant-list {
+      min-height: auto;
+    }
+    .ant-btn {
+      width: 100%;
+    }
+    .main-icon {
+      width: 60px;
+      margin: 0 auto;
+    }
+    .main-img {
+      width: 128px;
+      margin: 0 auto;
+    }
+    .price-inner-box {
+      margin: 1.5625rem 0;
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+  .price-box.active {
+    margin: 0 @margin-lg-ql;
+    margin-bottom: 2.1875rem;
+  }
+  .price-table-mobile {
+    margin-top: @margin-lg-ql;
+    .compare-head .ant-image-img {
+      width: 30px;
+    }
+    table,
+    .ant-table {
+      border: none !important;
+      background-color: transparent;
+    }
+    tbody tr td {
+      background-color: @light-color1;
+    }
+    .compare-head {
+      text-align: center;
+      h3.ant-typography {
+        color: @accent1;
+        margin: @margin-xs-ql 0;
+        font-size: @font-size-sm-ql;
+      }
+      .ant-typography {
+        font-size: @font-size-xs-ql;
+        line-height: 12px;
+        color: @accent1;
+      }
+    }
+    .ant-table-thead > tr .compare-head {
+      margin-bottom: @margin-xs-ql;
+      text-align: left;
+    }
+    .ant-table-tbody {
+      & > tr .heading-col {
+        height: 100px;
+        padding: 13px 4px;
+        border-right: 4px solid @light-color2;
+      }
+      & > tr td {
+        text-align: center;
+      }
+      & > tr:first-child td:nth-child(2) {
+        border-top-left-radius: 5px;
+      }
+      & > tr:first-child td:last-child {
+        border-top-right-radius: 5px;
+      }
+      & > tr:last-child td:nth-child(2) {
+        border-bottom-left-radius: 5px;
+      }
+      & > tr:last-child td:last-child {
+        border-bottom-right-radius: 5px;
+      }
+      & > tr:first-child .heading-col {
+        border-radius: 5px 5px 0 0;
+      }
+      & > tr:last-child .heading-col {
+        border-radius: 0 0 5px 5px;
+        border-spacing: 10px;
+      }
+    }
+    .anticon-check {
+      font-size: @font-size-sm-ql;
+      border-radius: 50%;
+      background-color: @light-color3;
+      padding: 5px;
+    }
+    .ant-table-thead > tr > th {
+      background-color: transparent;
+      border: none;
+    }
+    .ant-carousel {
+      .slick-dots-bottom {
+        bottom: -19px;
+        align-items: baseline;
+        li:first-child button,
+        li:last-child button {
+          width: 7px;
+          height: 7px;
+        }
+        li.slick-active button {
+          width: 10px;
+          height: 10px;
+        }
+        button {
+          opacity: 1;
+          background-color: @light-color1;
+        }
+      }
+      .slick-next {
+        display: block !important;
+        background-color: @accent1;
+        border-radius: 4px 1px 1px 4px;
+        color: @light-color1;
+        right: 0;
+        padding: 6px 3px;
+        height: max-content;
+        width: max-content;
+      }
+      .slick-prev {
+        left: 56px;
+        border-radius: 1px 4px 4px 1px;
+        text-align: center;
+        background-color: @accent1;
+        padding: 6px 3px;
+        color: @light-color1;
+        display: block !important;
+        height: max-content;
+        width: max-content;
+      }
+      .slick-disabled {
+        display: none !important;
+      }
+    }
+    .ant-table-row {
+      &:nth-child(3) td {
+        background-color: @light-color3;
+      }
+      &:nth-child(3) .anticon-check {
+        background-color: @light-color1;
+      }
+    }
+    .small-icon {
+      .ant-image-img {
+        width: 23px;
+      }
+      .ant-typography {
+        display: none;
+      }
+    }
+    .heading-group h2.ant-typography {
+      text-align: left;
+      font-size: @font-size-sm-ql;
+      color: @secondary-color3;
+      border-bottom: 1px solid @light-color5;
+      margin-bottom: 0;
+      padding-bottom: 5px;
+    }
+  }
+}

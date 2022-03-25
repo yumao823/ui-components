@@ -1,0 +1,692 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,700;0,900;1,400&family=La+Belle+Aurore&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap%27");
+.hero-section,
+.catalogue-section {
+  background: linear-gradient(169.27deg, #f3f6f9 -1.28%, #ffffff 84.35%);
+  padding: 134px 0;
+}
+.hero-section .ant-image,
+.catalogue-section .ant-image {
+  width: 100%;
+}
+.hero-section h1.ant-typography,
+.catalogue-section h1.ant-typography {
+  font-size: 2.5rem;
+  text-align: right;
+  line-height: 50px;
+  font-weight: bold;
+}
+.hero-section h1.ant-typography i,
+.catalogue-section h1.ant-typography i {
+  color: #f37a20;
+  font-style: normal;
+  text-transform: none;
+  font-weight: normal;
+}
+.hero-section h2.ant-typography,
+.catalogue-section h2.ant-typography {
+  color: #3f6587;
+  text-align: right;
+  font-size: 1.125rem;
+  line-height: 24px;
+  font-weight: normal;
+  margin: 2.25rem 0;
+}
+.help-section {
+  position: relative;
+}
+.help-section.invert .ant-list-grid .ant-list-item .ant-list-item-meta-title {
+  background-image: url("../../assets/images/Ellipse78.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.help-section .box {
+  background-color: #e7edf2;
+  padding: 1rem 2rem 2rem 2rem;
+  position: absolute;
+  top: -82px;
+  left: 0px;
+  right: 0;
+  z-index: 1;
+  box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.05);
+}
+.help-section .box h1.ant-typography {
+  font-size: 1.5rem;
+}
+.help-section .ant-list-grid .ant-list-item {
+  background-color: #f9fafc;
+  text-align: center;
+  padding: 16px 32px;
+  margin-bottom: 0;
+  border-radius: 4px;
+}
+.help-section .ant-list-grid .ant-list-item .ant-list-item-meta-avatar {
+  background: transparent;
+  padding: 0;
+}
+.help-section .ant-list-grid .ant-list-item .ant-list-item-meta-avatar .ant-image-img {
+  height: 38px;
+}
+.help-section .ant-list-grid .ant-list-item .ant-list-item-meta-content {
+  background-color: transparent;
+  padding: 0;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 16px;
+}
+.help-section .ant-list-grid .ant-list-item .ant-list-item-meta-content .ant-list-item-meta-title {
+  font-size: 2.25rem;
+  color: #3f6587;
+  line-height: inherit;
+  margin-bottom: 0;
+}
+.help-section .ant-list-grid .ant-list-item .ant-list-item-meta-content .ant-list-item-meta-title i {
+  font-size: 1.125rem;
+  color: #f37a20;
+  text-transform: uppercase;
+  font-style: normal;
+  margin-left: 4px;
+}
+.help-section .ant-list-grid .ant-list-item .ant-list-item-meta-content .ant-list-item-meta-description {
+  color: #3f6587;
+  line-height: 20px;
+  text-align: left;
+  font-size: 0.875rem;
+}
+.help-section .ant-list-grid .ant-list-item .ant-list-item-meta {
+  align-items: center;
+  gap: 16px;
+}
+.review-section {
+  background-color: #3f6587;
+  padding: 130px 0 64px 0;
+}
+.review-section .ant-comment-inner {
+  align-items: center;
+}
+.review-section .ant-comment-inner .ant-comment-content {
+  padding: 0 4rem;
+}
+.review-section .ant-comment-inner .ant-comment-content .ant-typography {
+  color: #ffffff;
+  font-weight: normal;
+}
+.review-section .ant-comment-inner .ant-comment-content h1.ant-typography {
+  font-size: 1.125rem;
+  font-style: italic;
+  line-height: 24px;
+  margin-bottom: 1.25rem;
+}
+.review-section .ant-comment-inner .ant-comment-content h2.ant-typography {
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin: 0;
+}
+.review-section .ant-comment-inner .ant-comment-content h3.ant-typography {
+  font-size: 0.875rem;
+  margin: 0;
+}
+.review-section .ant-comment-inner .ant-comment-avatar .ant-avatar {
+  height: 135px;
+  width: 135px;
+  background: #fff;
+}
+.review-section .ant-comment-inner .ant-comment-avatar .ant-avatar img {
+  width: 100%;
+  height: 100%;
+}
+.datahub-section {
+  padding: 128px 0;
+}
+.datahub-section .ant-ribbon-placement-start,
+.datahub-section .ant-ribbon-placement-end {
+  background-color: #f37a20;
+  border-radius: 1px 4px 4px 0px;
+  box-shadow: -3px 3px 3px rgba(0, 0, 0, 0.1);
+  white-space: normal;
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  padding: 8px 16px;
+  line-height: 19px;
+  top: -29px;
+}
+.datahub-section .ant-ribbon-placement-start .ant-ribbon-text,
+.datahub-section .ant-ribbon-placement-end .ant-ribbon-text {
+  font-size: 1.125rem;
+  line-height: 19px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
+.datahub-section .ant-ribbon-placement-end {
+  display: none;
+}
+.datahub-section .ant-card .ant-card-head-title {
+  padding-top: 53px;
+  padding-bottom: 0;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #3f6587;
+}
+.datahub-section .ant-card .ant-card-head {
+  border: none;
+  padding: 0 32px;
+}
+.datahub-section .ant-card .ant-card-body {
+  padding: 32px 32px 53px 32px;
+}
+.datahub-section .ant-card .ant-card-body .ant-typography {
+  font-size: 0.875rem;
+  color: #3f6587;
+  line-height: 24px;
+}
+.datahub-section .ant-card .ant-image {
+  position: absolute;
+  top: -200px;
+  right: 0;
+  width: 100%;
+}
+.datahub-section h1.ant-typography {
+  font-size: 2.25rem;
+  line-height: 43px;
+  margin-bottom: 3rem;
+}
+.datahub-section h1.ant-typography i {
+  color: #f37a20;
+  font-weight: normal;
+  font-style: normal;
+}
+.featured-src-section {
+  padding: 128px 0;
+}
+.featured-src-section h1.ant-typography {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #3f6587;
+}
+.featured-src-section .ant-card .ant-card-body {
+  padding: 32px;
+}
+.featured-src-section .ant-card .ant-card-body .ant-typography {
+  font-size: 0.875rem;
+  color: #3f6587;
+  line-height: 24px;
+}
+.featured-src-section .ant-card .cluster {
+  position: absolute;
+  top: -55px;
+  left: 0;
+  width: 100%;
+}
+.featured-src-section .ant-card .cluster .bg {
+  width: 87%;
+  height: 87%;
+  position: absolute;
+  left: 0;
+  top: 45px;
+  z-index: 0;
+  border-radius: 8px;
+  background-color: #f3f6f9;
+}
+.featured-src-section .ant-card .cluster .ant-image {
+  padding: 16px;
+}
+.getting-start-section {
+  padding: 100px 0 160px 0;
+  background-color: #3f6587;
+}
+.getting-start-section .ant-typography {
+  color: #ffffff;
+  line-height: 25px;
+  font-size: 1.125rem;
+  font-weight: normal;
+  margin-bottom: 2rem;
+}
+.getting-start-section h1.ant-typography {
+  color: #ffffff;
+  width: 350px;
+  max-width: 100%;
+  font-size: 3rem;
+  line-height: 56px;
+  font-weight: bold;
+}
+.getting-start-section h1.ant-typography i {
+  color: #f37a20;
+  font-style: normal;
+  font-weight: normal;
+}
+.getting-start-section .ant-btn-primary {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  margin-top: 0.5rem;
+  float: right;
+}
+.getting-start-section .ant-image {
+  width: 100%;
+}
+.mission-section {
+  background-color: #f9fafc;
+  padding: 160px 0 120px 0;
+}
+.mission-section .ant-image {
+  width: 100%;
+}
+.mission-section h1 {
+  font-size: 2.25rem;
+}
+.mission-section h1 i {
+  font-style: normal;
+  color: #f37a20;
+  font-weight: normal;
+}
+.mission-section .ant-simple-list .ant-list-item-meta {
+  align-items: center;
+}
+.mission-section .ant-simple-list .ant-list-item::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 8px;
+  margin-right: 0.825rem;
+  background-color: #f37a20;
+}
+.mission-section .ant-simple-list .ant-list-item-meta-description {
+  font-size: 1.0625rem;
+  line-height: 24px;
+  color: #3f6587;
+  font-weight: bold;
+}
+.investor-section,
+.thanks-section {
+  padding: 147px 0;
+  background-color: #f9fafc;
+}
+.investor-section .ant-typography p,
+.thanks-section .ant-typography p {
+  font-size: 1.125rem;
+  line-height: 24px;
+  color: #3f6587;
+}
+.investor-section h1.ant-typography i,
+.thanks-section h1.ant-typography i {
+  font-style: normal;
+  color: #f37a20;
+}
+.thanks-section .ant-image {
+  width: 50%;
+  padding: 16px;
+}
+.thanks-section .ant-image .ant-image-img {
+  height: 67px;
+}
+.investor-section {
+  background-color: #ffffff;
+}
+.investor-section .cluster {
+  padding: 20px;
+  border: 1px solid #f2f2f2;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.investor-section .ant-image {
+  width: 33%;
+  padding: 20px 16px;
+}
+.investor-section .ant-image .ant-image-img {
+  height: 30px;
+}
+.investor-section .ant-typography {
+  font-size: 0.875rem;
+  line-height: 23px;
+}
+.investor-section h1.ant-typography {
+  font-size: 2.25rem;
+  line-height: 43px;
+  max-width: 280px;
+}
+/* laptops (lg) */
+@media (min-width: 992px) and (max-width: 1199.5px) {
+  .help-section .ant-list-grid .ant-list-item,
+  .entities-section .ant-list-grid .ant-list-item,
+  .events-section .ant-list-grid .ant-list-item {
+    padding: 16px;
+  }
+  .featured-src-section .ant-card .cluster .ant-image {
+    width: 33%;
+  }
+  .featured-src-section .ant-card .cluster .ant-image .ant-image-img {
+    height: 50px;
+  }
+}
+/* tablet (md) */
+@media (min-width: 768px) and (max-width: 991.5px) {
+  .help-section .ant-list-grid .ant-list-item,
+  .entities-section .ant-list-grid .ant-list-item,
+  .events-section .ant-list-grid .ant-list-item {
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+  .review-section {
+    padding: 230px 0 64px 0;
+  }
+  .mission-section {
+    padding: 260px 0 120px 0;
+  }
+  .featured-src-section .ant-card .cluster .ant-image {
+    width: 33%;
+    padding: 10px;
+  }
+  .featured-src-section .ant-card .cluster .ant-image .ant-image-img {
+    height: 50px;
+  }
+}
+/* mobile (sm) */
+@media (min-width: 574px) and (max-width: 767.5px) {
+  .hero-section {
+    padding: 84px 0;
+  }
+  .hero-section h1.ant-typography {
+    font-size: 2.25rem;
+    text-align: left;
+  }
+  .hero-section h2.ant-typography {
+    text-align: left;
+  }
+  .help-section.invert .box h1.ant-typography,
+  .entities-section.invert .box h1.ant-typography,
+  .events-section.invert .box h1.ant-typography {
+    font-size: 1.5rem;
+    color: #3f6587;
+  }
+  .help-section .box,
+  .entities-section .box,
+  .events-section .box {
+    top: -27px;
+  }
+  .help-section .box h1.ant-typography,
+  .entities-section .box h1.ant-typography,
+  .events-section .box h1.ant-typography {
+    color: #f37a20;
+    font-size: 1.125rem;
+  }
+  .help-section .box .ant-list-grid .ant-list-item,
+  .entities-section .box .ant-list-grid .ant-list-item,
+  .events-section .box .ant-list-grid .ant-list-item {
+    padding: 16px 46px;
+    margin-bottom: 1rem;
+  }
+  .review-section {
+    padding: 460px 0 40px 0;
+  }
+  .review-section .ant-comment-inner {
+    display: inline-block;
+    text-align: center;
+  }
+  .review-section .ant-comment-inner .ant-comment-content {
+    padding: 1rem 0;
+    text-align: left;
+  }
+  .datahub-section {
+    padding: 64px 0;
+  }
+  .datahub-section .ant-ribbon-placement-start {
+    display: none;
+  }
+  .datahub-section .ant-card {
+    border: none;
+  }
+  .datahub-section .ant-card .ant-ribbon-placement-end {
+    display: block;
+    width: 250px;
+    top: unset;
+    bottom: 0px;
+  }
+  .datahub-section .ant-card .ant-ribbon-placement-end .ant-ribbon-text {
+    justify-content: flex-start;
+  }
+  .datahub-section .ant-card .ant-ribbon-placement-end .ant-ribbon-text i {
+    display: block;
+    font-weight: bold;
+    font-style: normal;
+  }
+  .datahub-section .ant-card .ant-ribbon-placement-end .ant-image {
+    width: auto;
+  }
+  .datahub-section .ant-card .ant-card-head {
+    display: none;
+  }
+  .datahub-section .ant-card .ant-image {
+    position: relative;
+    top: 0;
+  }
+  .datahub-section .ant-card .ant-card-body {
+    padding: 0;
+  }
+  .datahub-section .ant-card .ant-card-body h2.ant-typography {
+    padding-top: 32px;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .datahub-section h1.ant-typography {
+    font-size: 1.5rem;
+    line-height: 26px;
+  }
+  .featured-src-section {
+    padding: 64px 0;
+  }
+  .featured-src-section .ant-card {
+    border: none;
+  }
+  .featured-src-section .ant-card .ant-card-body {
+    padding: 0;
+  }
+  .featured-src-section .ant-card .ant-card-body h1.ant-typography {
+    margin: 1rem 0;
+  }
+  .featured-src-section .ant-card .cluster {
+    text-align: center;
+    position: relative;
+    top: 0;
+  }
+  .featured-src-section .ant-card .cluster .bg {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: transparent;
+    border: 1px solid #f2f2f2;
+  }
+  .featured-src-section .ant-card .cluster .ant-image {
+    padding: 16px 4px;
+  }
+  .getting-start-section {
+    padding: 64px 0;
+  }
+  .getting-start-section .ant-typography {
+    font-size: 0.875rem;
+    line-height: 24px;
+    margin-bottom: 1.5rem;
+  }
+  .getting-start-section h1.ant-typography {
+    font-size: 2.25rem;
+    line-height: 42px;
+  }
+  .mission-section {
+    padding: 558px 0 120px 0;
+  }
+  .mission-section .ant-image {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+  }
+  .mission-section h1,
+  .mission-section .ant-typography {
+    font-size: 1.5rem;
+  }
+  .thanks-section {
+    padding: 64px 0;
+  }
+  .thanks-section h1.ant-typography {
+    font-size: 2.25rem;
+  }
+  .investor-section {
+    padding: 64px 0;
+  }
+}
+/* (xs) */
+@media (max-width: 575px) {
+  .hero-section {
+    padding: 84px 0;
+  }
+  .hero-section h1.ant-typography {
+    font-size: 2.25rem;
+    text-align: left;
+  }
+  .hero-section h2.ant-typography {
+    text-align: left;
+  }
+  .help-section.invert .box h1.ant-typography,
+  .entities-section.invert .box h1.ant-typography,
+  .events-section.invert .box h1.ant-typography {
+    font-size: 1.5rem;
+    color: #3f6587;
+  }
+  .help-section .box,
+  .entities-section .box,
+  .events-section .box {
+    top: -27px;
+  }
+  .help-section .box h1.ant-typography,
+  .entities-section .box h1.ant-typography,
+  .events-section .box h1.ant-typography {
+    color: #f37a20;
+    font-size: 1.125rem;
+  }
+  .help-section .box .ant-list-grid .ant-list-item,
+  .entities-section .box .ant-list-grid .ant-list-item,
+  .events-section .box .ant-list-grid .ant-list-item {
+    padding: 16px 46px;
+    margin-bottom: 1rem;
+  }
+  .review-section {
+    padding: 460px 0 40px 0;
+  }
+  .review-section .ant-comment-inner {
+    display: inline-block;
+    text-align: center;
+  }
+  .review-section .ant-comment-inner .ant-comment-content {
+    padding: 1rem 0;
+    text-align: left;
+  }
+  .datahub-section {
+    padding: 64px 0;
+  }
+  .datahub-section .ant-ribbon-placement-start {
+    display: none;
+  }
+  .datahub-section .ant-card {
+    border: none;
+  }
+  .datahub-section .ant-card .ant-ribbon-placement-end {
+    display: block;
+    width: 250px;
+    top: unset;
+    bottom: 0px;
+  }
+  .datahub-section .ant-card .ant-ribbon-placement-end .ant-ribbon-text {
+    justify-content: flex-start;
+  }
+  .datahub-section .ant-card .ant-ribbon-placement-end .ant-ribbon-text i {
+    display: block;
+    font-weight: bold;
+    font-style: normal;
+  }
+  .datahub-section .ant-card .ant-ribbon-placement-end .ant-image {
+    width: auto;
+  }
+  .datahub-section .ant-card .ant-card-head {
+    display: none;
+  }
+  .datahub-section .ant-card .ant-image {
+    position: relative;
+    top: 0;
+  }
+  .datahub-section .ant-card .ant-card-body {
+    padding: 0;
+  }
+  .datahub-section .ant-card .ant-card-body h2.ant-typography {
+    padding-top: 32px;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .datahub-section h1.ant-typography {
+    font-size: 1.5rem;
+    line-height: 26px;
+  }
+  .featured-src-section {
+    padding: 64px 0;
+  }
+  .featured-src-section .ant-card {
+    border: none;
+  }
+  .featured-src-section .ant-card .ant-card-body {
+    padding: 0;
+  }
+  .featured-src-section .ant-card .ant-card-body h1.ant-typography {
+    margin: 1rem 0;
+  }
+  .featured-src-section .ant-card .cluster {
+    text-align: center;
+    position: relative;
+    top: 0;
+  }
+  .featured-src-section .ant-card .cluster .bg {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: transparent;
+    border: 1px solid #f2f2f2;
+  }
+  .featured-src-section .ant-card .cluster .ant-image {
+    padding: 16px 4px;
+  }
+  .getting-start-section {
+    padding: 64px 0;
+  }
+  .getting-start-section .ant-typography {
+    font-size: 0.875rem;
+    line-height: 24px;
+    margin-bottom: 1.5rem;
+  }
+  .getting-start-section h1.ant-typography {
+    font-size: 2.25rem;
+    line-height: 42px;
+  }
+  .mission-section {
+    padding: 558px 0 120px 0;
+  }
+  .mission-section .ant-image {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+  }
+  .mission-section h1,
+  .mission-section .ant-typography {
+    font-size: 1.5rem;
+  }
+  .thanks-section {
+    padding: 64px 0;
+  }
+  .thanks-section h1.ant-typography {
+    font-size: 2.25rem;
+  }
+  .investor-section {
+    padding: 64px 0;
+  }
+}
+/*# sourceMappingURL=Home.css.map */

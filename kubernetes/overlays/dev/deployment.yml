@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ui-components
+spec:
+  template:
+    spec:
+      containers:
+        - name: ui-components
+          image: 668348542525.dkr.ecr.eu-west-1.amazonaws.com/ui-components:last-deployed
+          resources:
+            requests:
+              memory: 64Mi
+              cpu: 0.1
+            limits:
+              memory: 256Mi
+              cpu: 1.0

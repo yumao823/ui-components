@@ -1,0 +1,59 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ui-components
+spec:
+  revisionHistoryLimit: 5
+  selector:
+    matchLabels:
+      app: ui-components
+  template:
+    spec:
+      serviceAccountName: backend-service
+      automountServiceAccountToken: true
+      containers:
+        - name: ui-components
+          image: fake-image
+          resources:
+            requests:
+              memory: 64Mi
+              cpu: 0.1
+            limits:
+              memory: 768Mi
+              cpu: 0.5
+          livenessProbe:
+            httpGet:
+              port: http
+              path: /
+            initialDelaySeconds: 30
+            periodSeconds: 60
+          readinessProbe:
+            httpGet:
+              port: http
+              path: /
+            initialDelaySeconds: 30
+            periodSeconds: 60
+            timeoutSeconds: 20
+          ports:
+            - containerPort: 3000
+              name: http
+          envFrom:
+            - configMapRef:
+                name: ui-components-config
+          env:
+            - name: SERVER_PORT
+              value: "3000"
+            - name: POD_NAME
+---
+apiVersion: autoscaling/v1
+kind: HorizontalPodAutoscaler
+metadata:
+  name: ui-components
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: ui-components
+  maxReplicas: 2
+  minReplicas: 1
+  targetCPUUtilizationPercentage: 60

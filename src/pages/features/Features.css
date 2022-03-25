@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,700;0,900;1,400&family=La+Belle+Aurore&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap%27");
+.features-section {
+  background-color: #f3f6f9;
+  padding-bottom: 170px;
+}
+.features-section .ant-col {
+  margin-top: -2rem;
+}
+.features-section .invert .ant-card:nth-child(odd) {
+  background-color: #f3f6f9;
+}
+.features-section .invert .ant-card:nth-child(even) {
+  background-color: #ffffff;
+}
+.features-section .ant-card {
+  border-radius: 8px;
+  padding: 24px 32px;
+  box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+}
+.features-section .ant-card:nth-child(even) {
+  background-color: #f3f6f9;
+}
+.features-section .ant-card .ant-card-cover {
+  position: absolute;
+  right: -32px;
+  left: unset;
+  top: -45px;
+  z-index: 0;
+}
+.features-section .ant-card .ant-card-head {
+  border: none;
+  padding: 0;
+  min-height: auto;
+}
+.features-section .ant-card .ant-card-head .ant-card-head-title {
+  color: #3f6587;
+  line-height: 28px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 0;
+  z-index: 1;
+}
+.features-section .ant-card .ant-card-body {
+  padding: 16px 0;
+}
+.features-section .ant-card .ant-card-body .ant-list-item {
+  padding: 1px;
+}
+.features-section .ant-card .ant-card-body .ant-list-item .ant-list-item-meta-content {
+  padding: 0;
+  background-color: transparent;
+}
+.features-section .ant-card .ant-card-body .ant-list-item .ant-list-item-meta-content .ant-list-item-meta-description {
+  color: #90b9d5;
+  font-size: 1.0625rem;
+  line-height: 24px;
+  font-weight: bold;
+}
+/*# sourceMappingURL=Features.css.map */

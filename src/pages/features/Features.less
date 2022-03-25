@@ -1,0 +1,62 @@
+@import "../../../ant-var.less";
+// ql features page
+.features-section {
+  background-color: @light-color3;
+  padding-bottom: 170px;
+  .ant-col {
+    margin-top: -2rem;
+  }
+  .invert {
+    .ant-card:nth-child(odd) {
+      background-color: @light-color3;
+    }
+    .ant-card:nth-child(even) {
+      background-color: @light-color1;
+    }
+  }
+  .ant-card {
+    border-radius: 8px;
+    padding: 24px 32px;
+    box-shadow: 15px 15px 30px @opacity2;
+    margin-bottom: 2rem;
+    &:nth-child(even) {
+      background-color: @light-color3;
+    }
+    .ant-card-cover {
+      position: absolute;
+      right: -32px;
+      left: unset;
+      top: -45px;
+      z-index: 0;
+    }
+    .ant-card-head {
+      border: none;
+      padding: 0;
+      min-height: auto;
+      .ant-card-head-title {
+        color: @accent1;
+        line-height: 28px;
+        font-weight: bold;
+        font-size: @heading-3-size-ql;
+        padding: 0;
+        z-index: 1;
+      }
+    }
+    .ant-card-body {
+      padding: 16px 0;
+      .ant-list-item {
+        padding: 1px;
+        .ant-list-item-meta-content {
+          padding: 0;
+          background-color: transparent;
+          .ant-list-item-meta-description {
+            color: @accent12;
+            font-size: 1.0625rem;
+            line-height: 24px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}

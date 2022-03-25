@@ -1,0 +1,54 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: ui-components
+  annotations:
+    # nginx ingress
+    kubernetes.io/ingress.class: nginx
+    nginx.ingress.kubernetes.io/rewrite-target: /$1
+    # cert-manager
+    ingress.kubernetes.io/ssl-redirect: "true"
+    cert-manager.io/cluster-issuer: clusterissuer-letsencrypt-production
+    # CORS
+    ## to support both frontend origin and 'localhost', need 'configuration-snippet' implementation here, because 'cors-allow-origin' field doesn't support multiple originss yet.
+    nginx.ingress.kubernetes.io/configuration-snippet: |
+      if ($http_origin ~* "^https?://((?:components.quicklookup.info)|(?:localhost))|(?:127.0.0.1))") {
+        set $cors "true";
+      }
+      if ($request_method = 'OPTIONS') {
+        set $cors "${cors}options";
+      }
+
+      if ($cors = "true") {
+        add_header 'Access-Control-Allow-Origin' "$http_origin" always;
+        add_header 'Access-Control-Allow-Credentials' 'true' always;
+        add_header 'Access-Control-Allow-Methods' 'GET, PUT, POST, DELETE, PATCH, OPTIONS' always;
+        add_header 'Access-Control-Allow-Headers' 'DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization' always;
+        add_header 'Access-Control-Expose-Headers' 'Content-Length,Content-Range' always;
+      }
+
+      if ($cors = "trueoptions") {
+        add_header 'Access-Control-Allow-Origin' "$http_origin";
+        add_header 'Access-Control-Allow-Credentials' 'true' always;
+        add_header 'Access-Control-Allow-Methods' 'GET, PUT, POST, DELETE, PATCH, OPTIONS';
+        add_header 'Access-Control-Allow-Headers' 'DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization';
+        add_header 'Access-Control-Expose-Headers' 'Content-Length,Content-Range';
+        add_header 'Access-Control-Max-Age' 1728000;
+        add_header 'Content-Type' 'text/plain charset=UTF-8';
+        add_header 'Content-Length' 0;
+        return 204;
+      }
+
+spec:
+  rules:
+    - host: components.quicklookup.info
+      http:
+        paths:
+          - path: /(.*)
+            backend:
+              serviceName: ui-components
+              servicePort: http
+  tls:
+    - hosts:
+        - components.quicklookup.info
+      secretName: ui-components-tls-secret
